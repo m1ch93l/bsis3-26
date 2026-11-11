@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section('title', 'Home Page')
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    @fonts
-
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-
-</head>
-
-<body>
-    <h1>Hello World!</h1>
-    <nav>
-
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/login">Login</a></li>
-
-    </nav>
-</body>
-
-</html>
+@section('content')
+<h1>Welcome to the Home Page</h1>
+<p>This is the main dashboard view.</p>
+@endsection
